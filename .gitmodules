@@ -1,0 +1,3 @@
+[submodule "3DGStream"]
+	path = 3DGStream
+	url = https://github.com/ewaMiazga/3DGStream.git
