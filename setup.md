@@ -28,7 +28,7 @@ runai bash <job-name>
 
 ### ======> Now we are in the job <======
 
-### 4. Go to my foldercd 3
+### 4. Go to my folder
 ```bash
 cd /scratch/cvlab/home/miazga
 ```
@@ -38,18 +38,43 @@ cd /scratch/cvlab/home/miazga
 ```bash
 su miazga
 source act_conda.sh
-conda activate dynamic_gaussians
-```
-
-- for 3dgstream training:
-```bash
-sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so
+conda activate <env_name>
 ```
 
 ### ======>  Ready to work with a cluster <======
 
 
 ### 6. Run training of dynamic gaussian splatting methods
+
+### 🔧 Environments
+
+#### 3DGStream  
+- **Working environment:** `ver_cuda_122`
+
+    If something does not work: 
+    ```bash
+    sudo ln -s /usr/lib/x86_64-linux-gnu/libcuda.so.1 /usr/lib/x86_64-linux-gnu/libcuda.so
+    ```
+
+#### Gaussian Splatting  
+- **Working environment:** `boris_splatting_python_3.10`  
+
+  If `diff` stops working, just run:  
+  ```bash
+  cd submodules/diff
+  pip install .
+  ```
+
+#### COLMAP
+- **Environment with COLMAP installed:** `gaussian_splatting` 
+
+#### Dynamic Gaussians
+- **Working environment:** `gaussian_splatting`
+
+#### HiCOM
+- **Working environment:** `hicom-env`
+
+
 
 #### 6.1 Dynamic 3D Gaussian Splatting
 
