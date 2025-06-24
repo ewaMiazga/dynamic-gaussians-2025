@@ -192,3 +192,7 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# HiCoM
+HiCoM/hicom_discussion_scene/
+HiCoM/hicom_discussion_scene_undist/
