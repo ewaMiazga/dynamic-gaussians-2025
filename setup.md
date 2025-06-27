@@ -30,7 +30,7 @@ runai bash <job-name>
 
 ### 4. Go to my folder
 ```bash
-cd /scratch/cvlab/home/miazga
+cd /scratch/cvlab/home/miazga/dynamic-gaussians-2025/
 ```
 
 
